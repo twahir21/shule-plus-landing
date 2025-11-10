@@ -11,10 +11,17 @@ export const Hero = component$(() => {
         <div class="grid lg:grid-cols-2 gap-10 items-center">
           {/* <!-- Left Text --> */}
           <div>
-            <div data-aos="fade-up" class="inline-flex items-center gap-3 mb-6">
-              <span class="px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full text-sm font-semibold">Two months free</span>
-              <span class="text-sm text-slate-500">No credit card • Easy & fast setup</span>
-            </div>
+
+          <div data-aos="fade-up" 
+              class="flex flex-col sm:inline-flex sm:flex-row items-start sm:items-center gap-3 mb-6">
+            <span class="px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full text-sm font-semibold">
+            2 months free
+            </span>
+            <span class="text-sm text-slate-500">
+              No credit card • Easy & fast setup
+            </span>
+          </div>
+
 
             <h1 data-aos="fade-right" class="text-4xl lg:text-5xl font-extrabold leading-tight mb-6">
               The all-in-one multi <span class="bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">School management </span>system
