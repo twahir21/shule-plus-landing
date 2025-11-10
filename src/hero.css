@@ -1,0 +1,95 @@
+      :root{ --navy:#0A1C2E; --emerald:#10B981 }
+        .bg-navy{ background-color:var(--navy) }
+        .text-navy{ color:var(--navy) }
+        /* free-hand border look */
+        .rounded-2xl{ border-radius:1.25rem }
+        .container{ max-width:1100px }
+
+                      @keyframes marquee { 0% { transform: translateX(0%)} 100% { transform: translateX(-50%) } }
+              .animate-marquee { display:inline-block; will-change:transform; animation: marquee 18s linear infinite; }
+              /* Add this to your main CSS file */
+
+.incline-bottom {
+  /* Skew the element vertically by -3 degrees. 
+     The effect is a diagonal line across the section. */
+  transform: skewY(-3deg);
+  /* Push it slightly off the bottom edge to cover any gaps */
+  transform-origin: 0 100%; /* Important: Skew relative to the bottom-left corner */
+  margin-bottom: -10px; /* Adjust to ensure full coverage */
+}
+
+.tilted-section {
+  /* background: linear-gradient(to right, #dee5ec, #3f9bf7); */
+  transform: skewY(4deg); /* tilt the section background */
+  padding: 4rem 0;
+}
+
+.tilted-section .content {
+  transform: skewY(-4deg); /* counteract tilt for readable text */
+  color: white;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero-container {
+  position: relative; /* CRITICAL: Establishes a positioning context for the overlay */
+  background-image: url('./assets/images/class-bg.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-container::before {
+  content: ""; /* CRITICAL: Required for pseudo-elements */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  /* The Overlay Color and Opacity */
+  /* White color: R:255, G:255, B:255. Opacity: 0.7 (70%) */
+  background-color: rgba(255, 255, 255, 0.8); 
+  
+  /* Ensure the overlay is BELOW the text (content) */
+  z-index: 1; 
+}
+
+.hero-content {
+  position: relative; 
+  z-index: 2; /* CRITICAL: Ensures content is stacked on top of the z-index: 1 overlay */
+  /* Center your content here */
+  padding: 50px;
+  color: #333; /* Use dark text color against the white overlay */
+}
+
+  @keyframes slowBounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+  }
+
+  .animated-circle {
+    animation: slowBounce 3s ease-in-out infinite;
+  }
+
+  .animated-circle:hover {
+    animation-play-state: paused;
+  }
+
+body, *{
+  font-family: "Varela Round", sans-serif;
+  /* font-family: "Funnel Display", sans-serif; */
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pacifico {
+  font-family: "Pacifico", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
