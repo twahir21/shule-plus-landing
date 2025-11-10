@@ -7,7 +7,7 @@ export const Navbar =  component$(() => {
   });
 
   return (
-    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur bg-[#0A1C2E]/60 border-b border-white/10">
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur bg-[#0A1C2E]/60 border-b border-white/10 w-screen">
       <nav class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
         <div class="flex items-center gap-2">
           <div class="h-8 w-8 rounded bg-[#2563EB]"></div>
