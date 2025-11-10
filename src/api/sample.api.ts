@@ -2,10 +2,10 @@ import { JSONObject } from "@builder.io/qwik-city";
 import { links } from "~/const/api.const";
 
 export const createApi = {
-    user: async (token: string) => {
-        // logic
-        // console.log(token)
-    },
+    // user: async (token: string) => {
+    //     // logic
+    //     // console.log(token)
+    // },
         login: async (data: JSONObject) => {
         if (data.username === '' || data.password === '') {
             return {
