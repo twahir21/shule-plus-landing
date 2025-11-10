@@ -9,8 +9,8 @@ export const Contact = component$(() => {
                 <h3 class="text-2xl font-bold mb-3">Get in touch</h3>
                 <p class="text-slate-600 mb-6">Have questions or want a tailored demo? Our team is here to help.</p>
                 <ul class="text-sm text-slate-600 space-y-2">
-                  <li>📧 support@schoolsaas.co.tz</li>
-                  <li>📞 +255 700 000 000</li>
+                  <li>📧 support@shuleplus.co.tz</li>
+                  <li>📞 +255 674 291 587</li>
                   <li>📍 Dar es Salaam, Tanzania</li>
                 </ul>
               </div>

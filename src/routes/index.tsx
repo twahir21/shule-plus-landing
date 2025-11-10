@@ -57,13 +57,6 @@ useVisibleTask$(() => {
         <Footer />
 
       </main>
-
-
-<div class="tilted-section">
-  <div class="content">
-    <h2>Modern School SaaS</h2>
-    <p>Manage everything from classes to exams easily.</p>
-  </div>
-</div>    </>
+</>
   );
 });
